@@ -1,6 +1,7 @@
 let aparicionesSumas = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
 for(let i = 0; i<50; i++){
+
     let dado1 = Math.floor(Math.random() * (7-1) + 1)
     let dado2 = Math.floor(Math.random() * (7-1) + 1)
     console.log(dado1 , dado2)
@@ -47,10 +48,10 @@ for(let i = 0; i<50; i++){
 const tabla = `
 <table>
     <tbody>
-        <tr>
+        <thead>
             <td>Suma</td>
             <td>Apariciones</td>
-        </tr> 
+        </thead> 
         <tr>       
             <td>2</td>
             <td> ${aparicionesSumas[0]} </td>
