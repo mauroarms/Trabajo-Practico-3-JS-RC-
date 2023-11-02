@@ -1,47 +1,49 @@
-let s2=0, s3=0, s4=0, s5=0, s6=0, s7=0, s8=0, s9=0, s10=0, s11=0, s12=0
+let aparicionesSumas = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
 for(let i = 0; i<50; i++){
     let dado1 = Math.floor(Math.random() * (7-1) + 1)
     let dado2 = Math.floor(Math.random() * (7-1) + 1)
+    console.log(dado1 , dado2)
+    
     let suma = dado1+dado2
     switch(suma){
         case 2:
-                s2++
+                aparicionesSumas[0]++
             break;
         case 3:
-            s3++
+                aparicionesSumas[1]++
             break;
         case 4:
-            s4++
+                aparicionesSumas[2]++
             break;
         case 5:
-            s5++
+                aparicionesSumas[3]++
             break;
         case 6:
-            s6++
+                aparicionesSumas[4]++
             break;
         case 7:
-            s7++
+                aparicionesSumas[5]++
             break;
         case 8:
-            s8++
+                aparicionesSumas[6]++
             break;
         case 9:
-            s9++
+                aparicionesSumas[7]++
             break;
         case 10:
-            s10++
+                aparicionesSumas[8]++
             break;
         case 11:
-            s11++
+                aparicionesSumas[9]++
             break;
         case 12:
-            s12++
+                aparicionesSumas[10]++
             break;
     }
 }
 
-let aparicionesSumas = [s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12]
+
 const tabla = `
 <table>
     <tbody>
@@ -98,4 +100,3 @@ const tabla = `
 `     
 document.write(tabla)
 console.log(tabla)
-
